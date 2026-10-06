@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+  table {
+    border-collapse: collapse;
+    width: 100%;
+    font-family: sans-serif;
+    font-size: 14px;
+  }
+  caption {
+    font-size: 18px;
+    font-weight: bold;
+    text-align: left;
+    padding-bottom: 10px;
+  }
+  th, td {
+    border: 1px solid #d8d8d0;
+    padding: 8px 10px;
+    text-align: center;
+  }
+  thead th {
+    background: #272822;
+    color: #f8f8f2;
+  }
+  tbody th {
+    text-align: left;
+    background: #f4f4ee;
+  }
+  tbody tr:nth-child(even) td {
+    background: #f8f8f2;
+  }
+  tbody tr:hover td {
+    background: #fdf6c8;
+  }
+  tfoot th, tfoot td {
+    background: #ecece4;
+    font-weight: bold;
+  }
+  .aprovado    { color: #4f8f0c; font-weight: bold; }
+  .recuperacao { color: #c4185d; font-weight: bold; }
+</style>
+
+<table>
+  <caption>Boletim — 1º ano B</caption>
+  <thead>
+    <tr>
+      <th rowspan="2" scope="col">Disciplina</th>
+      <th colspan="4" scope="colgroup">Bimestres</th>
+      <th rowspan="2" scope="col">Média</th>
+      <th rowspan="2" scope="col">Situação</th>
+    </tr>
+    <tr>
+      <th scope="col">1º</th>
+      <th scope="col">2º</th>
+      <th scope="col">3º</th>
+      <th scope="col">4º</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">Matemática</th>
+      <td>8,0</td><td>7,0</td><td>9,0</td><td>8,0</td>
+      <td>8,0</td>
+      <td class="aprovado">Aprovado</td>
+    </tr>
+    <tr>
+      <th scope="row">Português</th>
+      <td>7,0</td><td>6,0</td><td>8,0</td><td>7,0</td>
+      <td>7,0</td>
+      <td class="aprovado">Aprovado</td>
+    </tr>
+    <tr>
+      <th scope="row">História</th>
+      <td>9,0</td><td>8,5</td><td>9,5</td><td>9,0</td>
+      <td>9,0</td>
+      <td class="aprovado">Aprovado</td>
+    </tr>
+    <tr>
+      <th scope="row">Física</th>
+      <td>5,0</td><td>4,5</td><td>6,0</td><td>4,5</td>
+      <td>5,0</td>
+      <td class="recuperacao">Recuperação</td>
+    </tr>
+    <tr>
+      <th scope="row">Química</th>
+      <td>6,5</td><td>7,0</td><td>6,0</td><td>6,5</td>
+      <td>6,5</td>
+      <td class="aprovado">Aprovado</td>
+    </tr>
+  </tbody>
+  <tfoot>
+    <tr>
+      <th scope="row" colspan="5">Média geral</th>
+      <td>7,1</td>
+      <td>—</td>
+    </tr>
+  </tfoot>
+</table>
+</body>
+</html>

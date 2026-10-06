@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+  .tabela-wrap { overflow-x: auto; border: 1px solid #d8d8d0; }
+  table { border-collapse: collapse; min-width: 640px; width: 100%; font-family: sans-serif; }
+  caption { text-align: left; font-weight: bold; padding: 10px; }
+  th, td { border: 1px solid #d8d8d0; padding: 8px 12px; text-align: center; }
+  tbody th { text-align: left; }
+  col.destaque { background: #fdf6c8; }
+</style>
+
+<div class="tabela-wrap">
+  <table>
+    <caption>Temperatura máxima da semana (°C)</caption>
+    <colgroup>
+      <col>
+      <col span="5">
+      <col span="2" class="destaque">
+    </colgroup>
+    <thead>
+      <tr>
+        <th scope="col">Cidade</th>
+        <th scope="col">Seg</th><th scope="col">Ter</th><th scope="col">Qua</th>
+        <th scope="col">Qui</th><th scope="col">Sex</th>
+        <th scope="col">Sáb</th><th scope="col">Dom</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr><th scope="row">Curitiba</th><td>19</td><td>21</td><td>18</td><td>17</td><td>20</td><td>23</td><td>22</td></tr>
+      <tr><th scope="row">Recife</th><td>30</td><td>31</td><td>29</td><td>30</td><td>31</td><td>32</td><td>31</td></tr>
+      <tr><th scope="row">Porto Alegre</th><td>22</td><td>24</td><td>21</td><td>20</td><td>23</td><td>25</td><td>24</td></tr>
+    </tbody>
+  </table>
+</div>
+</body>
+</html>
